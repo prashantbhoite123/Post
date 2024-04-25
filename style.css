@@ -212,7 +212,7 @@ i {
 
   #content {
     /* margin-top: 6vw; */
-    height: 80vh;
+    height: 70vh;
     width: 90vw;
   }
   .flowPOst {
@@ -246,15 +246,15 @@ i {
   }
   #icone_content {
     margin-top: 3vw;
-    height: 40vw;
+    height: 30vw;
   }
   .frist_icone i {
     margin-left: 2vw;
-    font-size: 4vw;
+    font-size: 6vw;
   }
   .second_icone i {
     margin-left: 2vw;
-    font-size: 4vw;
+    font-size: 6vw;
   }
   #icone_con {
     font-size: 4vw;
