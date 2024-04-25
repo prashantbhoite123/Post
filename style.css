@@ -5,14 +5,20 @@
 }
 .insta_h1 {
   text-align: center;
-  margin-top: 1vw;
-  color: white;
+  /* margin-top: 1vw; */
+  color: #000;
 }
 
 body {
   height: 100%;
   width: 100%;
   /* background-color: lightseagreen; */
+
+  background-size: 100% 100%;
+}
+#container {
+  height: 100vh;
+  width: 100vw;
   background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
@@ -20,13 +26,9 @@ body {
     #c850c0 46%,
     #ffcc70 100%
   );
-  background-size: 100% 100%;
-}
-#container {
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -40,13 +42,21 @@ body {
   background-color: #000;
   flex-direction: column;
 }
+/* 
+.heart-doble {
+  position: absolute;
+  left: 50vw;
+  bottom: 20vw;
+  font-size: 4vw;
+  z-index: 10;
+  color: red;
+} */
+
 .usernameCon {
   margin-top: 1vw;
   height: 3.5vw;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
-  /* background-color: black; */
   width: 90%;
 }
 .userinfo {
@@ -116,8 +126,6 @@ body {
   border-radius: 1vw;
   width: 100%;
   color: white;
-
-  /* background-color: #0093e9; */
 }
 .frist_icone i {
   margin-left: 1vw;
@@ -141,6 +149,24 @@ body {
   height: 10vw;
   width: 8vw;
   display: none;
+}
+.double {
+  position: absolute;
+  top: 25vw;
+  bottom: 50vw;
+  left: 50vw;
+  transition: all ease-in 10s;
+  display: none;
+}
+.double i {
+  color: white;
+  font-size: 4vw;
+  color: red;
+  opacity: 0.8;
+}
+
+.double-hide {
+  display: inline;
 }
 
 ul {
@@ -175,4 +201,62 @@ i {
 
 .heart {
   color: red;
+}
+
+@media (max-width: 700px) {
+  .container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  #content {
+    margin-top: 10vw;
+    height: 60vh;
+    width: 90vw;
+  }
+  .flowPOst {
+    height: 10vw;
+  }
+  .Posts_heading {
+    font-size: 5vw;
+  }
+  #FollowBtn {
+    margin-right: 8vw;
+    height: 10vw;
+    width: 15vw;
+    font-size: 6vw;
+  }
+  .usernameCon {
+    /* margin-right: 5vw; */
+    height: 10vw;
+    width: 90vw;
+  }
+  .usernameCon img {
+    margin-left: 2vw;
+    height: 9vw;
+    width: 9vw;
+  }
+  .user_name {
+    font-size: 4vw;
+    margin-left: 3vw;
+  }
+  .image_con {
+    height: 90vw;
+  }
+  #icone_content {
+    margin-top: 3vw;
+    height: 9vw;
+  }
+  .frist_icone i {
+    margin-left: 2vw;
+    font-size: 4vw;
+  }
+  .second_icone i {
+    margin-left: 2vw;
+    font-size: 4vw;
+  }
+  #icone_con {
+    font-size: 4vw;
+    margin-left: 40vw;
+  }
 }

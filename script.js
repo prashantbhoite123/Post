@@ -1,5 +1,8 @@
+const count = document.querySelector(".count");
 const FollowBtn = document.querySelector("#FollowBtn");
-
+const doubleHeart = document.querySelector(".double");
+const imageCon = document.querySelector(".image_con");
+console.log(imageCon);
 FollowBtn.addEventListener("click", (e) => {
   e.target.innerHTML === "Unfollow"
     ? (e.target.innerHTML = "Follow")
@@ -20,13 +23,23 @@ threeDot.addEventListener("click", (e) => {
   objectCon.classList.toggle("hide");
 });
 
-const heartIcone = document.querySelector(".fa-heart");
+const heartIcone = document.querySelector(".back-heart");
 console.log(heartIcone);
-const count = document.querySelector(".count");
 
 heartIcone.addEventListener("click", (e) => {
+  console.log("heart was clicked");
   e.target.classList.toggle("heart");
-  e.target.classList[2] === "heart"
-    ? (count.innerHTML = 1)
-    : (count.innerHTML = 0);
+  // count.innerHTML === 0 ? (count.innerHTML = 1) : (count.innerHTML = 0);
+  // console.log(count.innerHTML);
+  count.innerHTML == 0 ? (count.innerHTML = 1) : (count.innerHTML = 0);
+});
+
+imageCon.addEventListener("dblclick", (e) => {
+  // console.log("image was clicked");
+  doubleHeart.classList.add("double-hide");
+  heartIcone.classList.add("heart");
+  count.innerHTML == 0 ? (count.innerHTML = 1) : (count.innerHTML = 1);
+  setTimeout(() => {
+    doubleHeart.classList.remove("double-hide");
+  }, 1500);
 });
