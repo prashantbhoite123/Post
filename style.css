@@ -137,8 +137,6 @@ body {
   font-size: 1.5vw;
 }
 .object_content {
-  /* padding: 20px; */
-
   display: flex;
   justify-content: center;
   position: absolute;
@@ -180,6 +178,9 @@ ul {
   flex-direction: column;
   background-color: #000;
 }
+.ul button {
+  color: white;
+}
 
 .iconeBtn {
   height: 2vw;
@@ -203,7 +204,7 @@ i {
   color: red;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .container {
     height: 100vh;
     width: 100vw;
@@ -258,5 +259,23 @@ i {
   #icone_con {
     font-size: 4vw;
     margin-left: 40vw;
+  }
+  .double {
+    position: absolute;
+    top: 100vw;
+    left: 40vw;
+    /* display: inline; */
+  }
+  .double i {
+    font-size: 20vw;
+  }
+  .object_content {
+    position: absolute;
+    right: 30vw;
+    left: 65vw;
+    top: 77vw;
+    background-color: black;
+    height: 35vw;
+    width: 25vw;
   }
 }
